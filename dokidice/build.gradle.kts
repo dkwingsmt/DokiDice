@@ -13,5 +13,5 @@ dependencies {
 }
 
 application {
-    mainClassName = "demo.subscribe.SubscribeSamplesKt"
+    mainClassName = "dokidice.DokiDiceKt"
 }

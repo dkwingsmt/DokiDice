@@ -19,8 +19,8 @@ pluginManagement {
     }
 }
 
-rootProject.name = 'mirai-demos'
+rootProject.name = 'dokidice'
 
-include(':mirai-demo-kotlin')
+include(':dokidice')
 
 enableFeaturePreview('GRADLE_METADATA')

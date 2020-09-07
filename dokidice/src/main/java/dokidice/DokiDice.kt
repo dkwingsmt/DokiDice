@@ -9,7 +9,7 @@
 
 @file:Suppress("EXPERIMENTAL_UNSIGNED_LITERALS", "EXPERIMENTAL_API_USAGE")
 
-package demo.subscribe
+package dokidice
 
 import kotlinx.coroutines.CompletableJob
 import kotlinx.coroutines.launch
