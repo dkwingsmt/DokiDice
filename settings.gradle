@@ -22,5 +22,3 @@ pluginManagement {
 rootProject.name = 'dokidice'
 
 include(':dokidice')
-
-enableFeaturePreview('GRADLE_METADATA')

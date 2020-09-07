@@ -13,6 +13,7 @@ package dokidice
 
 import kotlinx.coroutines.CompletableJob
 import kotlinx.coroutines.launch
+import com.xenomachina.argparser.ArgParser
 import net.mamoe.mirai.Bot
 import net.mamoe.mirai.alsoLogin
 import net.mamoe.mirai.contact.Friend
@@ -25,9 +26,17 @@ import net.mamoe.mirai.message.*
 import net.mamoe.mirai.message.data.*
 import java.io.File
 
-
 @Suppress("UNUSED_VARIABLE")
-suspend fun main() {
+suspend fun main(args: Array<String>) {
+    val parser = ArgParser(args)
+    val isSmokeTest by parser.flagging(
+        "--smoke-test",
+        help = "Run smoke test (exit without running bot)")
+    if (isSmokeTest) {
+        println("Smoke test passed!")
+        return
+    }
+
     val bot = Bot( // JVM 下也可以不写 `QQAndroid.` 引用顶层函数
         123456789,
         "123456"
