@@ -33,7 +33,7 @@ suspend fun main(args: Array<String>) {
         "--smoke-test",
         help = "Run smoke test (exit without running bot)")
     if (isSmokeTest) {
-        println("Smoke test passed failed")
+        println("Smoke test passed")
         return
     }
 
