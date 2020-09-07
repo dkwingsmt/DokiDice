@@ -17,3 +17,5 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
+    - name: Run smoke test
+      run: if [[ $(./gradlew run --args="--smoke-test" --quiet) != "Smoke test passed" ]]; then exit 1; fi
